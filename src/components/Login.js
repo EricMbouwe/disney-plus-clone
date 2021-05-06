@@ -55,11 +55,11 @@ const CTA = styled.div`
 `;
 
 const CTALogoOne = styled.img`
-  margin-bottom: 12px;
+  width: 100%;
   max-width: 600px;
   min-height: 1px;
+  margin-bottom: 12px;
   display: block;
-  width: 100%;
 `;
 
 const SignUp = styled.a`
@@ -88,9 +88,9 @@ const Description = styled.p`
 `;
 
 const CTALogoTwo = styled.img`
+  width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
   display: inline-block;
   vertical-align: bottom;
-  width: 100%;
 `;

@@ -181,6 +181,7 @@ const Description = styled.div`
   font-size: 20px;
   padding: 16px 0px;
   color: rgb(249, 249, 249);
+  // max-width: 760px;
 
   @media (max-width: 768px) {
     font-size: 14px;
