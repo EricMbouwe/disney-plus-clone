@@ -52,6 +52,8 @@ const Logo = styled.img`
 
 const NavMenu = styled.div`
   display: flex;
+  overflow-x: hidden;
+  height: 100%;
   align-items: center;
   flex: 1;
   margin-left: 25px;
