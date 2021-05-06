@@ -34,6 +34,7 @@ const Container = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/images/login-background.jpg');
+    opacity: 0.8;
     position: absolute;
     top: 0;
     right: 0;
@@ -43,39 +44,13 @@ const Container = styled.div`
   }
 `;
 
-const Content = styled.div`
-  margin-bottom: 10vw;
-  width: 100%;
-  position: relative;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 80px 40px;
-  height: 100%;
-`;
-
-const BgImage = styled.div`
-  height: 100%;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('/images/login-background.jpg');
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-`;
-
 const CTA = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 650px;
-  width: 80%;
+  width: 100%;
   padding: 80px 40px;
+  margin-top: -150px;
   text-align: center;
 `;
 
