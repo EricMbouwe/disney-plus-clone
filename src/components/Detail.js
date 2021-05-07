@@ -71,16 +71,18 @@ const Container = styled.div`
 `;
 
 const Background = styled.div`
-  left: 0px;
-  opacity: 0.8;
   position: fixed;
-  right: 0px;
   top: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.8;
   z-index: -1;
 
   img {
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
+    object-position: top;
 
     @media (max-width: 768px) {
       width: initial;
@@ -89,20 +91,17 @@ const Background = styled.div`
 `;
 
 const ImageTitle = styled.div`
-  align-items: flex-end;
-  display: flex;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  margin: 0px auto;
-  height: 30vw;
+  //height: 20vw;
   min-height: 170px;
-  padding-bottom: 24px;
   width: 100%;
+  margin-bottom: 34px;
 
   img {
     max-width: 600px;
     min-width: 200px;
-    width: 35vw;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -228,7 +227,6 @@ const Description = styled.div`
   font-size: 20px;
   padding: 16px 0px;
   color: rgb(249, 249, 249);
-  // max-width: 760px;
 
   @media (max-width: 768px) {
     font-size: 14px;
