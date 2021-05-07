@@ -63,10 +63,10 @@ export default Detail;
 
 const Container = styled.div`
   position: relative;
-  min-height: calc(100vh-250px);
+  min-height: calc(100vh - 70px);
   overflow-x: hidden;
   display: block;
-  top: 72px;
+  margin-top: 70px;
   padding: 0 calc(3.5vw + 5px);
 `;
 
@@ -95,6 +95,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   width: 100%;
   margin-bottom: 34px;
+  margin-top: 50px;
 
   img {
     max-width: 600px;
