@@ -23,6 +23,7 @@ export default Login;
 const Container = styled.div`
   position: relative;
   height: calc(100vh - 70px);
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
