@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import ImageSlider from './ImageSlider';
 import Recommend from './Recommend';
 import Viewers from './Viewers';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 import { setMovies } from '../features/movie/movieSlice';
 import Trending from './Trending';
 import Originals from './Originals';
 import NewDisney from './NewDisney';
-import { selectUserName } from "../features/user/userSlice";
-
+import { selectUserName } from '../features/user/userSlice';
 
 function Home() {
   const dispatch = useDispatch();
@@ -21,10 +20,8 @@ function Home() {
   let trending = [];
 
   useEffect(() => {
-    console.log('hello');
     db.collection('movies').onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
-        console.log(recommends);
         switch (doc.data().type) {
           case 'recommend':
             recommends = [...recommends, { id: doc.id, ...doc.data() }];
@@ -41,6 +38,8 @@ function Home() {
           case 'trending':
             trending = [...trending, { id: doc.id, ...doc.data() }];
             break;
+          default:
+
         }
       });
 
