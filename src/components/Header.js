@@ -113,7 +113,7 @@ const Nav = styled.div`
   height: 70px;
   background: #090b13;
   padding: 0 36px;
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -173,12 +173,15 @@ const NavMenu = styled.div`
         visibility: visible;
       }
     }
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 `;
 
 const UserImg = styled.img`
   height: 100%;
- 
 `;
 
 const LoginContainer = styled.div`
