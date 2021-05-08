@@ -2,10 +2,10 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { selectMovies } from '../features/movie/movieSlice';
+import { selectRecommend } from '../features/movie/movieSlice';
 
-function Movies() {
-  const movies = useSelector(selectMovies);
+function Recommend() {
+  const movies = useSelector(selectRecommend);
 
   return (
     <Container>
@@ -24,7 +24,7 @@ function Movies() {
   );
 }
 
-export default Movies;
+export default Recommend;
 
 const Container = styled.div`
   padding: 0 0 26px;
